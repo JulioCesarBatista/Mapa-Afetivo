@@ -1,0 +1,290 @@
+@font-face{
+    font-family: 'AmaticSC-Bold'; src: url(../fonts/AmaticSC-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'AmaticSC-Regular'; src: url(../fonts/AmaticSC-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Roboto-Bold'; src: url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face{
+    font-family: 'Roboto-Medium'; src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'Roboto-Regular'; src: url(../fonts/Roboto-Regular.ttf);
+}
+
+* {margin: 0;padding: 0;}
+
+body{background-color: #FFF;font-family: 'NotoSans-Regular', sans-serif;margin: 0;padding: 0;}
+
+/* ESTILIZAÇÃO BARRA DE ROLAGEM */
+body::-webkit-scrollbar {width: 10px; height: 10px; background: #000;} /* "Fundo" */
+body::-webkit-scrollbar-track-{border-radius: 5px;} /*  */
+body::-webkit-scrollbar-thumb {border-radius: 10px; background: #4B8796;}
+
+
+/* Banner */
+.banner{
+    background-image: url(../img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 17vh;
+}
+
+.tudo{
+    background-image: url(../img/fundo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    padding: 0px;
+    margin-top: -20px;
+}
+
+/* SOBRE MIM */
+.sobre-mim{display: flex; flex-direction: column; justify-content: center;font-family: 'Roboto-Regular';}
+
+.tudo-sobre{height: 100%; display: flex; align-items: center; flex-direction: column; padding: 0px 15px;}
+/* mudei o height para porcentagem, só assim deu certo */
+
+.tudo-sobre img{margin-top: 50px; border-radius: 300px; width: 250px;}
+
+.conteudo-sobre{height: 100%;display: flex; align-items: center; justify-content: center; 
+                flex-direction: column; width: 100%; margin-top: 50px;} 
+
+.texto-sobre {font-size: 1rem;}
+
+.conteudo-sobre h2{font-size: 2rem;}
+.conteudo-sobre .hr-sobre{ width: 45vw;border: solid 1px #2669A5;}
+
+.conteudo-sobre .texto-sobre{font-size: 1rem;text-align: justify;padding: 0px 30px;line-height: 30px;}
+
+.aspas{color: #2669A5; font-size: 30px;}
+
+.tudo-sobre h2{font-family: 'AmaticSC-Bold';}
+
+
+/* 
+titulo-mapa */
+.mapa-titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'AmaticSC-Bold'; 
+    margin-top: 40px;
+    width: 100%;
+    align-items: center;
+}
+
+.hr-titulo{ width: 45vw;border: solid 1px #2669A5;}
+
+/* area-do-mapa */
+
+.Mapa{
+    height: 80vh;
+    padding: 10px;
+
+}
+
+
+/* Mapa feito */
+.mapa-afetivo{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+/* footer */
+footer{
+    background-color: #619E9E;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.direitos p{
+    color: #000;
+    font-size: 0.9rem;
+    font-family: 'Roboto-Regular';
+ } 
+
+ .logo{
+    animation: float 9s ease-in-out infinite;
+    transform: translatey(0px);
+    /* width: 70vw; */
+}
+
+
+
+/* ANIMAÇÃO ÍCONE  */
+@keyframes float
+{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-10px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+    
+}
+
+.frase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 92vw;
+    padding: 10px;
+}
+.frase1{
+    font-family: "AmaticSC-Bold";
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.autor{
+    font-family: "AmaticSC-Regular";
+}
+
+
+ @media(min-width: 576px) {
+
+    .banner{ 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+        /* background-attachment: fixed; */
+        height: 260px;
+        width: 100%;
+    }
+
+    .Mapa{
+        height: 600px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 80px;
+        margin-top: 110px;
+    }
+
+
+    .mapa-afetivo{
+        width: 1200px;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        left: 0px;
+        top: 0px;
+        border: solid #000 1px;
+    }
+
+    .mapa-titulo{
+        margin-top: 100px;
+     }
+    .mapa-titulo h1{
+       font-size: 5rem;
+    }
+
+    .mapa-titulo .hr-titulo{ 
+        width: 30vw;
+        border: solid 1px #2669A5;
+    }
+
+
+    .frase{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 92vw;
+        margin-bottom: 90px;
+    }
+    .frase1{
+        font-family: "AmaticSC-Bold";
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .autor{
+        font-family: "AmaticSC-Regular";
+        font-size: 1.5rem;
+    }
+    
+ }
+
+
+ @media(min-width: 928px) {
+    /* SOBRE MIM */
+    .sobre-mim{
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+    
+    .tudo-sobre{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    
+    
+    .tudo-sobre img{
+        margin-top: 50px;
+        border-radius: 300px;
+        width: 400px;
+    }
+    
+    
+    .conteudo-sobre{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 50%;
+        margin-top: 70px;
+    } 
+    
+    .conteudo-sobre h2{
+        margin-left: 30px;
+        font-size: 5rem;
+    }
+    
+    
+    .conteudo-sobre .hr-sobre{
+        width: 15vw;
+        border: solid 1px #2669A5;
+        margin-left: 30px;
+
+    }
+    
+    .conteudo-sobre .texto-sobre{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 0px 30px;
+        line-height: 43px;
+    }
+
+}
